@@ -25,4 +25,4 @@ io.on('connection', socket => {
     })
 })
 
-server.listen(PORT, () => console.log('Server running...'))
+server.listen(process.env.PORT || PORT, () => console.log('Server running...'))
